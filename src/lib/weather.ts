@@ -14,7 +14,7 @@ export type Weather = {
 export type GeoPlace = {
   name: string;
   country: string;
-  admin?: string;
+  admin?: string | undefined;
   lat: number;
   lon: number;
 };
