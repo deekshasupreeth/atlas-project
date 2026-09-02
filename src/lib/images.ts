@@ -13,7 +13,7 @@ const WIKI = "https://en.wikipedia.org/api/rest_v1/page/summary/";
 
 export async function fetchWikiImage(title: string, signal?: AbortSignal): Promise<RemoteImage | null> {
   const res = await fetch(WIKI + encodeURIComponent(title), {
-    signal,
+    signal: signal ?? null,
     headers: { Accept: "application/json" },
   });
   if (!res.ok) throw new Error(`Image lookup failed (${res.status})`);
