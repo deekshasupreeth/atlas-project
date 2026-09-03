@@ -162,7 +162,7 @@ export const destinations: Destination[] = [
     tags: ["Islands", "Coast", "Food"],
     lat: 36.3932,
     lon: 25.4615,
-    wiki: "Santorini",
+    wiki: "Oia,_Greece",
     tagline: "A drowned volcano with villages on the rim",
     blurb:
       "The caldera edge is the whole point: white cubes stacked over a 300-metre drop into blue water. Stay a night longer than you planned and go inland.",

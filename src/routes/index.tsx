@@ -231,17 +231,16 @@ function Explorer({ term, setTerm }: { term: string; setTerm: (v: string) => voi
       ) : (
         <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {results.map((d, i) => (
-            <div key={d.slug} className={cn(i % 5 === 0 && "lg:row-span-2")}>
-              <DestinationCard
-                slug={d.slug}
-                name={d.name}
-                country={d.country}
-                tagline={d.tagline}
-                wiki={d.wiki}
-                tall={i % 5 === 0}
-                index={i}
-              />
-            </div>
+            <DestinationCard
+              key={d.slug}
+              slug={d.slug}
+              name={d.name}
+              country={d.country}
+              tagline={d.tagline}
+              wiki={d.wiki}
+              tall={false}
+              index={i}
+            />
           ))}
         </div>
       )}
